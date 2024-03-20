@@ -1,10 +1,12 @@
-import { View, Text } from "react-native";
+import { View, Image, Text } from "react-native";
 
 import styles from "./styles";
 
-const Title = ({ title }) => {
+
+const Title = ({ image, title }) => {
   return (
     <View>
+      <Image source={image} style={{width: 415, height: 100, marginTop: -90}}/>
       <Text style={styles.title}>{title}</Text>
     </View>
   );

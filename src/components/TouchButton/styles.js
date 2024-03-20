@@ -6,10 +6,13 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   button: {
-    marginTop: 20,
-    padding: 10,
-    backgroundColor: "#C9D4FF",
+    marginBottom: 20,
+    backgroundColor: "red",
     borderRadius: 5,
+    padding: 3,
+    width: 140,
+    height:42,
+   
   },
 });
 

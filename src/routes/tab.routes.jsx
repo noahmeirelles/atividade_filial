@@ -45,22 +45,7 @@ const TabRoutes = () => {
         }}
       />
 
-      <Tab.Screen
-        name="Category"
-        component={Category}
-        options={{
-          tabBarIcon: ({ focused }) => (
-            <Feather
-              name="list"
-              size={24}
-              color={focused ? "#131313" : "#D6D6D6"}
-            />
-          ),
-          tabBarLabel: "Categorias",
-          tabBarActiveTintColor: "#131313",
-          tabBarInactiveTintColor: "#D6D6D6",
-        }}
-      />
+     
     </Tab.Navigator>
   );
 };

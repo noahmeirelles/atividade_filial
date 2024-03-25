@@ -1,20 +1,27 @@
-import { View } from "react-native";
+import { View, Image, ScrollView } from "react-native";
 
 import styles from "./styles";
-import Title from "../../components/Title";
+
 import { user } from "../../data/Profile";
 import TouchButton from "../../components/TouchButton";
-import { ScrollView } from "react-native-gesture-handler";
+
+
 
 export default function Home() {
   return (
+    <View>
+      <ScrollView>
     <View style={styles.container}>
      
-      <Title title={"Home"} image={require('../../../assets/senas.png')} />
-
-      <TouchButton route="Profile" title="Go to Profile" data={user} />
+      <Image source={require("../../../assets/senas.png")} style={styles.senas} />
+      <TouchButton route="Home"  title="Click to Home" />
+      <TouchButton route="Profile" title="Click to Profile" data={user} />
+    
+      <TouchButton route="Cadastro"  title="Click to Cadastro"  />
 
       
+    </View>
+    </ScrollView>
     </View>
   );
 }
